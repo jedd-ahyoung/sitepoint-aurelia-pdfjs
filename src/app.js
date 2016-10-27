@@ -1,5 +1,6 @@
 export class App {
     constructor () {
+        // Set up some sensible defaults for documents to use with our repeater.
 		this.documents = [
 			{
 				url: 'dist/documents/oversize_pdf_test_0.pdf',
