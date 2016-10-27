@@ -18,8 +18,6 @@ export class PdfDocument {
 
 		this.fingerprint = generateUniqueDomId();
 		this.pages = [];
-		this.scrollTop = {};
-		this.offsetTop = {};
 
 		this.currentPage = null;
 		this.resolveDocumentPending;
