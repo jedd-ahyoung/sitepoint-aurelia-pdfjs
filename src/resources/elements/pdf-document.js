@@ -1,5 +1,9 @@
 import {customElement, bindable, inject, bindingMode, TaskQueue, Loader} from 'aurelia-framework';
 import {PDFJS} from 'pdfjs-dist';
+
+/* Due to a current limitation in Aurelia's templating, it's not possible to declare multiple
+methods in an event handler with separate binding behaviors. We work around this by duplicating
+the event name by adding these lines to our ViewModel. */
 import {SyntaxInterpreter} from 'aurelia-templating-binding';
 SyntaxInterpreter.prototype.trigger2 = SyntaxInterpreter.prototype.trigger;
 
